@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+
+  --color-page: var(--bg-page);
+  --color-surface: var(--bg-surface);
+  --color-content: var(--text-main);
+  --color-content-muted: var(--text-muted);
+  --color-line: var(--border-color);
+
+  --shadow-soft: 0 20px 80px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 20px 80px rgba(0, 0, 0, 0.35);
+
+  --radius-card: 22px;
+  --radius-btn: 12px;
+}
+
+:root {
+  --bg-page: #ffffff;
+  --bg-surface: #f9fafb;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+  --border-color: #e5e7eb;
+
+  --shadow-active: var(--shadow-soft);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  --bg-page: #060910;
+  --bg-surface: rgba(255, 255, 255, 0.04);
+  --text-main: #e8ecf5;
+  --text-muted: #9fb0c8;
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  --shadow-active: var(--shadow-dark);
+  color-scheme: dark;
+}
+
+@layer base {
+  *, ::after, ::before {
+    @apply border-line;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-page text-content font-space antialiased;
+    background-image:
+      radial-gradient(100% 100% at 0% 0%, rgba(122, 226, 255, 0.04), transparent);
+    min-height: 100vh;
+    min-height: 100dvh;
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-bold tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-blue-500/20 text-blue-500;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-400 via-[#7ae2ff] to-blue-500 bg-clip-text text-transparent;
+  }
+
+  .touch-target {
+    @apply min-h-[44px] min-w-[44px];
+  }
+}
+
+@layer base {
+  @media (max-width: 640px) {
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .container-mobile {
+      @apply px-4;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 8vw, 2.5rem) !important;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 6vw, 1.875rem) !important;
+    }
+  }
+}
+
+/* Smooth scroll offset for fixed navbar */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-white/10 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-white/20;
+}
