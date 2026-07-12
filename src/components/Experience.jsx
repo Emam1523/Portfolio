@@ -10,7 +10,7 @@ const experiences = [
   {
     company: "soft360d",
     role: "Part-time Software Engineer",
-    duration: "2024 - Present",
+    duration: "2025 - Present",
     desc: "Developing and maintaining various web applications and client solutions.",
   }
 ];
