@@ -3,7 +3,7 @@ import { FiGithub } from "react-icons/fi";
 
 const projects = [
   {
-    title: "VitaBridge – Online Health Care Platform",
+    title: "VitaBridge - Online Health Care Platform",
     desc: "A digital healthcare platform connecting doctors and patients. Features AI symptom checking, telemedicine, and OCR medical data extraction.",
     tags: ["React", "Spring Boot", "Django"],
     link: "https://github.com/Emam1523/VitaBridge",
@@ -47,6 +47,12 @@ const projects = [
     link: "https://github.com/Emam1523/Bill-Prediction-Model",
     image: "/assets/Bill_predict.jpg",
   },
+  {
+    title: "Real Time Gross Settlement (RTGS) System",
+    desc: "A real-time financial transaction system for processing gross settlements between banks.",
+    tags: ["Java", "Spring Boot", "Angular","Oracle SQL","Flowable"],
+    image: "/assets/rtgs.png",
+  }
 ];
 
 const Projects = () => {

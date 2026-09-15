@@ -73,11 +73,11 @@ const Hero = () => {
           className="relative justify-self-center order-1 md:order-2"
         >
           <div className="relative">
-            <div className="w-40 h-44 sm:w-64 sm:h-72 md:w-72 md:h-80 bg-gradient-to-br from-blue-400 via-[#7ae2ff] to-purple-500 rounded-2xl p-1 rotate-2 hover:rotate-0 transition-transform duration-700 shadow-2xl shadow-blue-500/20">
+            <div className="w-fit h-44 sm:h-72 md:h-80 bg-gradient-to-br from-blue-400 via-[#7ae2ff] to-purple-500 rounded-2xl p-1 rotate-2 hover:rotate-0 transition-transform duration-700 shadow-2xl shadow-blue-500/20">
               <img
-                src="/assets/profile.jpg"
+                src="/assets/profile.png"
                 alt="Emam Hassan"
-                className="w-full h-full object-cover rounded-[1.3rem]"
+                className="w-full h-full object-contain rounded-xl"
               />
             </div>
             <motion.div
