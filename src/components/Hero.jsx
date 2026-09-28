@@ -3,8 +3,8 @@ import { FiDownload, FiArrowRight, FiCode, FiBriefcase, FiGitBranch} from 'react
 
 const stats = [
   { icon: <FiBriefcase />, value: '1+', label: 'Years Experience' },
-  { icon: <FiCode />, value: '5+', label: 'Projects Delivered' },
-  { icon: <FiGitBranch />, value: '8+', label: 'Technologies' },
+  { icon: <FiCode />, value: '7+', label: 'Projects Delivered' },
+  { icon: <FiGitBranch />, value: '10+', label: 'Technologies' },
 ];
 
 const Hero = () => {

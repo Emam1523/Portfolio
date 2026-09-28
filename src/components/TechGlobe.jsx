@@ -20,6 +20,7 @@ const TECH_ITEMS = [
   { name: "Java", Icon: FaJava, color: "#f89820" },
   { name: "C", Icon: SiC, color: "#00599c" },
   { name: "JavaScript", Icon: FaJs, color: "#f7df1e" },
+  {name: "TypeScript", Icon: FaJs, color: "#3178c6" },
   { name: "Python", Icon: FaPython, color: "#3776ab" },
   { name: "Docker", Icon: FaDocker, color: "#2496ed" },
   { name: "HTML5", Icon: FaHtml5, color: "#e34f26" },
