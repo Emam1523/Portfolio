@@ -52,6 +52,12 @@ const projects = [
     desc: "A real-time financial transaction system for processing gross settlements between banks.",
     tags: ["Java", "Spring Boot", "Angular","Oracle SQL","Flowable"],
     image: "/assets/rtgs.png",
+  },
+  {
+    title: "Bangladesh Electronic Fund Transfer (BEFTN) System",
+    desc: "A secure electronic fund transfer system for interbank transactions in Bangladesh.",
+    tags: ["Java", "Spring Boot", "Angular","Oracle SQL","Flowable"],
+    image: "/assets/beftn.png",
   }
 ];
 

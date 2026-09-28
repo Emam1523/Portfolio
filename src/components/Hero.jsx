@@ -86,7 +86,7 @@ const Hero = () => {
               className="absolute -bottom-3 -right-3 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-lg bg-white dark:bg-[#101723] border border-gray-200 dark:border-white/10 shadow-lg flex items-center gap-1.5 sm:gap-2 text-[10px] sm:text-xs font-medium"
             >
               <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-green-500" />
-              Available for hire
+              Available for hiring
             </motion.div>
           </div>
         </motion.div>
