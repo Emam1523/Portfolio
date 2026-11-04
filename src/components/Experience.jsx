@@ -2,17 +2,18 @@ import { motion } from 'framer-motion';
 import TechGlobe from './TechGlobe';
 
 const experiences = [
-  {
-    company: "LEADS Corporation Ltd. (BD)",
-    role: "Intern Software Engineer",
-    duration: "May 2026 - Present",
-    desc: "Working on RTGS, NSPB, EFT (Banking Transaction Systems) Dynamic flow management software."
-  },
-  {
+
+    {
     company: "soft360d",
     role: "Part-time Software Engineer",
     duration: "November 2025 - Present",
     desc: "Developing and maintaining various web applications and client solutions.",
+  },
+  {
+    company: "LEADS Corporation Ltd. (BD)",
+    role: "Intern Software Engineer",
+    duration: "May 2026 - October 2026",
+    desc: "Working on RTGS, EFT (Banking Transaction Systems) Dynamic flow management software."
   }
 ];
 
