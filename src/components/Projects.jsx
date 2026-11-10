@@ -56,7 +56,7 @@ const projects = [
   {
     title: "Bangladesh Electronic Fund Transfer (BEFTN) System",
     desc: "A secure electronic fund transfer system for interbank transactions in Bangladesh.",
-    tags: ["Java", "Spring Boot", "Angular","Oracle SQL","Flowable"],
+    tags: ["Java", "Spring Boot", "Angular","Oracle SQL","Drools"],
     image: "/assets/beftn.png",
   }
 ];
