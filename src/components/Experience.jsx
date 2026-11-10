@@ -4,7 +4,7 @@ import TechGlobe from './TechGlobe';
 const experiences = [
 
     {
-    company: "soft360d",
+    company: "Innova Tech Bangladesh",
     role: "Part-time Software Engineer",
     duration: "November 2025 - Present",
     desc: "Developing and maintaining various web applications and client solutions.",

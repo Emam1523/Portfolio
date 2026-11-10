@@ -27,6 +27,7 @@ const TECH_ITEMS = [
   { name: "Tailwind CSS", Icon: SiTailwindcss, color: "#06b6d4" },
   { name: "SQL", Icon: FiDatabase, color: "#00758f" },
   { name: "Spring Boot", Icon: SiSpringboot, color: "#6db33f" },
+  { name:"Astro", Icon: FaReact, color:"#ff5a03" }
 ];
 
 const GLOBE_RADIUS = 145;
